@@ -1,1 +1,1 @@
-rvm use jruby-1.6.5@ekuseru --create
+rvm use jruby-1.6.6@ekuseru --create

@@ -37,4 +37,9 @@ class EkuseruControllerTest < ActionController::TestCase
     spreadsheet = Spreadsheet.open StringIO.new(@response.body)
     assert_equal 42, spreadsheet.worksheet(0)[0,0]
   end
+
+  test "this should fail to tests if tests are running on travis ci" do
+    boolean_value = false
+    boolean_value.should be_true
+  end
 end
